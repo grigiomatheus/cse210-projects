@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Foundation4.Models.Activity">
+    <Position X="6.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAABBCAAAAAAAEQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Activity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Foundation4.Models.Address">
+    <Position X="2.75" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAEAACAAAAAAAAAAAAAAAACACAAA=</HashCode>
+      <FileName>Models\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Foundation4.Models.CyclingActivity">
+    <Position X="4" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAEQAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Models\CyclingActivity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Foundation4.Models.SwimmingActivity">
+    <Position X="6.25" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Models\SwimmingActivity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Foundation4.Models.RunningActivity">
+    <Position X="8.5" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Models\RunningActivity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
