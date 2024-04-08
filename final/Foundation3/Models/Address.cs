@@ -14,5 +14,10 @@
             _state = state;
             _country = country;
         }
+
+        public string GetAddress()
+        {
+            return $"{_street}, {_city}, {_state}, {_country}.";
+        }
     }
 }

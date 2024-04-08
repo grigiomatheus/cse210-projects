@@ -4,9 +4,18 @@
     {
         private string _rsvpEmail;
 
-        public override void GenerateFullMessage()
+        public ReceptionEvent(string title, string description, DateTime date, TimeSpan duration, Address address, string rsvpEmail)
+            : base(title, description, date, duration, address)
         {
-            throw new NotImplementedException();
+            _type = "Reception Event";
+            _rsvpEmail = rsvpEmail;
+        }
+
+        public override string GenerateFullMessage()
+        {
+            string standardMessage = base.GenerateStandardMessage();
+            standardMessage += $"\nRSVP Email: {_rsvpEmail}";
+            return standardMessage;
         }
     }
 }

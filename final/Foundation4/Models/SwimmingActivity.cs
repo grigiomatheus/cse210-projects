@@ -4,19 +4,12 @@
     {
         private int _laps;
 
-        public override double GetSpeed()
+        public SwimmingActivity(DateTime date, int duration, int laps) : base(date, duration)
         {
-            throw new NotImplementedException();
+            _type = "Swimming";
+            _laps = laps;
         }
 
-        public override double GetDistance()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override double GetPace()
-        {
-            throw new NotImplementedException();
-        }
+        public override double GetDistance() => (_laps * 50d) / 1000d;
     }
 }

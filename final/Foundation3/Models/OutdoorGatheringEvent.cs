@@ -4,11 +4,20 @@ namespace Foundation3.Models
 {
     public class OutdoorGatheringEvent : Event
     {
-        private string _wheaterForecast;
+        private string _weatherForecast;
 
-        public override void GenerateFullMessage()
+        public OutdoorGatheringEvent(string title, string description, DateTime date, TimeSpan duration, Address address, string wheaterForecast)
+            :base(title, description, date, duration, address)
         {
-            throw new NotImplementedException();
+            _type = "Outdoor Gathering Event";
+            _weatherForecast = wheaterForecast;
+        }
+
+        public override string GenerateFullMessage()
+        {
+            string standardMessage = base.GenerateStandardMessage();
+            standardMessage += $"\nWeather Forecast: {_weatherForecast}";
+            return standardMessage;
         }
     }
 }

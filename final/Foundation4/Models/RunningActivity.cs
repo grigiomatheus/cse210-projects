@@ -4,19 +4,12 @@
     {
         private double _distance;
 
-        public override double GetSpeed()
+        public RunningActivity(DateTime date, int duration, double distance) : base(date, duration)
         {
-            throw new NotImplementedException();
+            _type = "Running";
+            _distance = distance;
         }
 
-        public override double GetDistance()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override double GetPace()
-        {
-            throw new NotImplementedException();
-        }
+        public override double GetDistance() => _distance;
     }
 }
